@@ -1,0 +1,51 @@
+/*------------------------------ Styles for basic layout skeleton START ------------------------------*/
+//Layout
+body {
+    width: 100vw;
+    height: 100vh;
+
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
+}
+
+//body > wrapper
+.wrapper {
+    // position: relative;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+}
+
+//any-block > container - limits the width
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    width: 100%;
+    height: 4rem;
+
+    background-color: $text-color-white;
+
+    z-index: 5;
+}
+
+.content {
+    flex: 1 1 auto; //and now footer is always below
+}
+
+/*------------------------------ Styles for basic layout skeleton END ------------------------------*/

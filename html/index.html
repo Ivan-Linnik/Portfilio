@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/fonts/fontawesome-free-6.3.0-web/css/all.css">
+    <link rel="stylesheet" href="/fonts/fontawesome-free-6.3.0-web/css/brands.css">
+    <link rel="stylesheet" href="/fonts/fontawesome-free-6.3.0-web/css/solid.css">
+    <link rel="stylesheet" href="/styles/service/swiper-bundle.min.css">
+    <title>Иван Линник</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <a href="/html/index.html" class="header__logo-link lng-logo">
+                        ivan linnik
+                    </a>
+                </div>
+                <span class="header__burger">
+                    <span class="burger-middle"></span>
+                </span>
+                <div class="header__service service">
+                    <nav class="header__navigation">
+                        <ul class="navigation-list">
+                            <li class="navigation-list__item">
+                                <a href="#about-me" class="navigation__link lng-nav__about">
+                                    Обо мне
+                                </a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#my-works" class="navigation__link lng-nav__works">
+                                    Мои работы
+                                </a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a class="navigation__link lng-nav__contacts">
+                                    Контакты
+                                </a>
+                                <ul class="contacts__list">
+                                    <li class="contacts__item">
+                                        <a href="https://t.me/ivanlinnik" class="contacts__link" target="_blank">
+                                            <i class="fa-brands fa-telegram"></i>
+                                            <span class="contacts__text">
+                                                Telegram
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="https://wa.me/89518294569?text=Здравствуйте, Иван"
+                                            class="contacts__link" target="_blank">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                            <span class="contacts__text">
+                                                WhatsApp
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="https://github.com/Ivan-Linnik?tab=repositories" class="contacts__link"
+                                            target="_blank">
+                                            <i class="fa-brands fa-github"></i>
+                                            <span class="contacts__text">
+                                                GitHub
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="toggles">
+                        <div class="toggles__theme">
+                            <label for="toggle-theme" class="toggle-label">
+                                <input type="checkbox" id="toggle-theme" class="toggle__input">
+                                <span class="toggle__slider"></span>
+                                <i class="fas fa-sun"></i>
+                                <i class="fa-solid fa-moon"></i>
+                            </label>
+                        </div>
+                        <div class="toggles__lang">
+                            <label for="languages-input" class="languages-label">
+                                <input type="checkbox" id="languages-input" class="languages-input">
+                                <span class="rus-lang lng-toggle__rus">
+                                    ру
+                                </span>
+                                <span class="lang-trait">
+                                    |
+                                </span>
+                                <span class="eng-lang lng-toggle__eng">
+                                    eng
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <div class="container">
+                <!-- Different sections START -->
+                <section class="about-me section" id="about-me">
+                    <div class="about-me__text-block">
+                        <a href="/img/favicon.ico" class="summary__button lng-summary" download>
+                            Скачать резюме
+                        </a>
+                        <div class="section__worker-info">
+                            <span class="worker-info__profession lng-worker-info">
+                                Джуниор фронтенд разработчик
+                            </span>
+                            <span class="worker-info__age-city lng-age-city">
+                                28 лет, Батайск
+                            </span>
+                        </div>
+                    </div>
+                    <div class="about-me__image-container">
+                        <img src="/img/about-section/ivan-linnik.webp" alt="моё фото">
+                    </div>
+                </section>
+                <!-- Different sections END -->
+                <!-- Different sections START -->
+                <section class="my-works section" id="my-works">
+                    <h2 class="my-works__header lng-works-header">
+                        мои работы
+                    </h2>
+                    <div class="my-works__container swiper-container swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slide -->
+                            <div class="my-works__block swiper-slide">
+                                <h3 class="block__title lng-calculator">
+                                    калькулятор
+                                </h3>
+                                <div class="block__content calc-body">
+                                    <input type="text" class="calc-screen" disabled placeholder="0">
+                                    <button type="button" class="button all-clear" value="AC">AC</button>
+                                    <button type="button" class="button clear-one" value="C">C</button>
+                                    <button type="button" class="button button-operator" value="%"
+                                        title="10%80=8;  50%3=1.5">%</button>
+                                    <button type="button" class="button button-operator" value="/">/</button>
+                                    <!-- Next row -->
+                                    <button type="button" class="button" value="7">7</button>
+                                    <button type="button" class="button" value="8">8</button>
+                                    <button type="button" class="button" value="9">9</button>
+                                    <button type="button" class="button button-operator" value="X">X</button>
+                                    <!-- Next row -->
+                                    <button type="button" class="button" value="4">4</button>
+                                    <button type="button" class="button" value="5">5</button>
+                                    <button type="button" class="button" value="6">6</button>
+                                    <button type="button" class="button button-operator" value="-">–</button>
+                                    <!-- Next row -->
+                                    <button type="button" class="button" value="1">1</button>
+                                    <button type="button" class="button" value="2">2</button>
+                                    <button type="button" class="button" value="3">3</button>
+                                    <button type="button" class="button button-operator" value="+">+</button>
+                                    <!-- Next row -->
+                                    <button type="button" class="button" value="0">0</button>
+                                    <button type="button" class="button" value=".">,</button>
+                                    <button type="button" class="button button-operator" value="=">=</button>
+                                    <!-- Buttons row End -->
+                                </div>
+                            </div>
+                            <!-- Slide -->
+                            <div class="my-works__block swiper-slide">
+                                <h3 class="block__title lng-something">
+                                    что-то ещё
+                                </h3>
+                            </div>
+                            <!-- Slide -->
+                            <div class="my-works__block swiper-slide">
+                                <h3 class="block__title lng-thisSite">
+                                    этот сайт
+                                </h3>
+                            </div>
+                            <!-- Slide -->
+                        </div>
+                        <span class="swiper-button-prev">←</span>
+                        <span class="swiper-button-next">→</span>
+                        <span class="swiper-pagination"></span>
+                    </div>
+                </section>
+            </div>
+            <!-- Different sections END -->
+    </div>
+    </main>
+    </div>
+    <script src="/scripts/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="/scripts/swiper/swiper-bundle.esm.browser.min.js"></script>
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
